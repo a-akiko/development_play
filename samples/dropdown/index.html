@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Sample Site</title>
+    <link rel="stylesheet" href="lib/superfish/css/superfish.css" media="screen">
+    <link rel="stylesheet" href="lib/superfish/css/superfish-vertical.css" media="screen">
+    <style>
+    body{
+      font-family: meiryo;
+    }
+    .header-contents{
+      padding: 32px;
+      text-align: center;
+    }
+    .side-contents,
+    .main-contents{
+      display: inline-block;
+      vertical-align: top;
+    }
+    .side-contents{
+      margin-left: 2%;
+      margin-right: 2%;
+      width: 20%;
+    }
+    .sf-menu{
+      width: 100%;
+    }
+    .main-contents{
+      width: 70%;
+    }
+    </style>
+    <script src="lib/jquery.js"></script>
+    <script src="lib/superfish/js/hoverIntent.js"></script>
+    <script src="lib/superfish/js/superfish.js"></script>
+    <script>
+  $(function(){
+    jQuery('ul.sf-menu').superfish({
+      animation: {height:'show'},  // slide-down effect without fade-in
+      delay: 1200      // 1.2 second delay on mouseout
+    });
+  });
+    </script>
+  </head>
+  <body>
+
+<div class="header-contents">
+  <h1>Dropdown Sample</h1>
+</div>
+
+<div class="side-contents">
+    <ul class="sf-menu sf-vertical" id="example">
+      <li class="current">
+        <a >menu item 1</a>
+        <ul>
+          <li>
+            <a href="contents/contents_page.html">menu item</a>
+          </li>
+          <li class="current">
+            <a href="contents/contents_page.html">long menu item sets sub width</a>
+            <ul>
+              <li class="current"><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="contents/contents_page.html">menu item</a>
+            <ul>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="contents/contents_page.html">menu item</a>
+            <ul>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="contents/contents_page.html">menu item 2</a>
+      </li>
+      <li>
+        <a >menu item 3</a>
+        <ul>
+          <li>
+            <a href="contents/contents_page.html">menu item</a>
+            <ul>
+              <li><a href="contents/contents_page.html">short</a></li>
+              <li><a href="contents/contents_page.html">short</a></li>
+              <li><a href="contents/contents_page.html">short</a></li>
+              <li><a href="contents/contents_page.html">short</a></li>
+              <li><a href="contents/contents_page.html">short</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="contents/contents_page.html">menu item</a>
+            <ul>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="contents/contents_page.html">menu item</a>
+            <ul>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="contents/contents_page.html">menu item</a>
+            <ul>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="contents/contents_page.html">menu item</a>
+            <ul>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+              <li><a href="contents/contents_page.html">menu item</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="contents/contents_page.html">menu item 4</a>
+      </li>
+    </ul>
+</div>
+
+<div class="main-contents">
+    <p>Morbi pulvinar ornare mauris. Vivamus ut ipsum. Fusce vitae pede. Etiam sodales, libero vitae ultricies vestibulum, elit eros aliquam pede, auctor lobortis enim ligula non nibh. Quisque molestie, nibh ac malesuada ultricies, metus urna adipiscing dui, tincidunt fermentum lectus velit ac ipsum. Curabitur ultrices ipsum et tortor. Nullam non felis ornare sem laoreet viverra.</p>
+
+    <p>Nunc turpis ligula, auctor ut, iaculis porta, consequat vel, turpis. Suspendisse sed diam. In scelerisque condimentum tellus. Vivamus et velit a ante consectetuer tempor. Nunc vitae mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Suspendisse lacinia, lacus a posuere molestie, tellus diam ullamcorper est, in mattis elit nisi nec odio. Aliquam a sem sit amet dolor viverra ornare. Curabitur elit velit, tempus vel, tempus at, ultricies non, arcu. Duis viverra tempus tellus. Duis dignissim convallis tortor. Phasellus nisl.</p>
+
+    <p>Morbi pulvinar ornare mauris. Vivamus ut ipsum. Fusce vitae pede. Etiam sodales, libero vitae ultricies vestibulum, elit eros aliquam pede, auctor lobortis enim ligula non nibh. Quisque molestie, nibh ac malesuada ultricies, metus urna adipiscing dui, tincidunt fermentum lectus velit ac ipsum. Curabitur ultrices ipsum et tortor. Nullam non felis ornare sem laoreet viverra.</p>
+
+    <p>Nunc turpis ligula, auctor ut, iaculis porta, consequat vel, turpis. Suspendisse sed diam. In scelerisque condimentum tellus. Vivamus et velit a ante consectetuer tempor. Nunc vitae mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Suspendisse lacinia, lacus a posuere molestie, tellus diam ullamcorper est, in mattis elit nisi nec odio. Aliquam a sem sit amet dolor viverra ornare. Curabitur elit velit, tempus vel, tempus at, ultricies non, arcu. Duis viverra tempus tellus. Duis dignissim convallis tortor. Phasellus nisl.</p>
+
+    <p>Morbi pulvinar ornare mauris. Vivamus ut ipsum. Fusce vitae pede. Etiam sodales, libero vitae ultricies vestibulum, elit eros aliquam pede, auctor lobortis enim ligula non nibh. Quisque molestie, nibh ac malesuada ultricies, metus urna adipiscing dui, tincidunt fermentum lectus velit ac ipsum. Curabitur ultrices ipsum et tortor. Nullam non felis ornare sem laoreet viverra.</p>
+
+    <p>Nunc turpis ligula, auctor ut, iaculis porta, consequat vel, turpis. Suspendisse sed diam. In scelerisque condimentum tellus. Vivamus et velit a ante consectetuer tempor. Nunc vitae mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Suspendisse lacinia, lacus a posuere molestie, tellus diam ullamcorper est, in mattis elit nisi nec odio. Aliquam a sem sit amet dolor viverra ornare. Curabitur elit velit, tempus vel, tempus at, ultricies non, arcu. Duis viverra tempus tellus. Duis dignissim convallis tortor. Phasellus nisl.</p>
+</div>
+
+
+  </body>
+</html>
